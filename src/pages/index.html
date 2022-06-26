@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Jinoridze Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__body">
+            <div class="header__burger">
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+
+            <a href="#welcome" class="header__logo">
+                <picture>
+                    <source srcset="images/dark-logo.svg" media="(prefers-color-scheme:dark)">
+                    <img src="images/light-logo.svg">
+                </picture>
+            </a>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a class="header__link" href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#works">My projects</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#work-experience">Work experience</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#tech-set">Tech set</a>
+                    </li>
+                    <li>
+                        <ul class="language-selector">
+                            <li>
+                                <a class="language-selector__link" href="?locale=ka">KA</a>
+                            </li>
+                            <li>
+                                <a class="language-selector__link" href="?locale=en">EN</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="theme-switch">☀️</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="welcome page-segment">
+                <div class="page-segment__anchor" id="welcome"></div>
+                <div class="profile">
+                    <div class="profile__content">
+                        <span>👋 Hello, my name is</span>
+                        <h1 class="profile__title">Alexander Jinoridze</h1>
+                        <span>and I'm</span>
+                        <h2 class="profile__role">Front-end developer</h2>
+                        <div class="profile__contacts">
+                            <ul class="contacts-list">
+                                <li class="contacts-list__itme">
+                                    <i class="icon icon-location"></i>
+                                    <span>📍 Tbilisi, Georgia</span>
+                                </li>
+                                <li class="contacts-list__itme">
+                                    <i class="icon icon-phone"></i>
+                                    <span>📞 +995 557 534378</span>
+                                </li>
+                                <li class="contacts-list__itme">
+                                    <i class="icon icon-email"></i>
+                                    <span>📧 jinoridzealexander@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profile__links">
+                            <ul class="links-list">
+                                <li class="links-list__itme"></li>
+                                <li class="links-list__itme"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile-pic"></div>
+                </div>
+            </div>
+            <div class="about page-segment">
+                <div class="page-segment__anchor" id="about"></div>
+            </div>
+            <div class="works page-segment">
+                <div class="page-segment__anchor" id="works"></div>
+                <h2 class="works__title">Works</h2>
+                <div class="works__content container">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Nostrum illo accusamus quia illum inventore
+                        placeat, repudiandae saepe. Similique ex officia
+                        alias incidunt, optio omnis placeat, unde, cum
+                        repellendus quaerat quod.
+                    </p>
+                </div>
+                <div class="works__note">
+                    <div class="works__note-icon">!</div>
+                    <div class="works__note-content">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Animi ex molestiae deserunt
+                            perspiciatis magnam ipsam unde magni commodi?
+                            Ipsam nobis corporis enim illum vitae. Impedit,
+                            sint! Sint aspernatur expedita eos!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="works-slider">
+            <div><div class="work-card"></div></div>
+            <div><div class="work-card"></div></div>
+            <div><div class="work-card"></div></div>
+            <div><div class="work-card"></div></div>
+            <div><div class="work-card"></div></div>
+        </div>
+        <div class="container page-segment">
+            <div class="page-segment__anchor" id="education"></div>
+            <div class="article-list">
+                <h3 class="article-list__title">Education</h3>
+                <div class="article-list__content">
+                    <div class="article">
+                        <div class="article__article-pic"></div>
+                        <div class="article__article-content">
+                            <div class="article__date">2012-2013</div>
+                            <div class="article__article-header">
+                                <h3 class="article__main-title">
+                                    Web developer course
+                                </h3>
+                                <h4 class="article__sub-title">
+                                    Profesional college "Mermisi"
+                                </h4>
+                            </div>
+                            <p class="article__content">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eum atque laboriosam nulla
+                                totam necessitatibus obcaecati reiciendis
+                                iusto! Nam inventore, sit exercitationem
+                                maxime soluta quidem unde, rem reiciendis
+                                nostrum repellendus nobis?
+                            </p>
+                            <ul class="article__contacts">
+                                <li class="article__contact-item">
+                                    <i class="icon icon-web"></i>
+                                    <span>🌐 http://www.mermisicollege.edu.ge</span>
+                                </li>
+                                <li class="article__contact-item">
+                                    <i class="icon icon-phone"></i>
+                                    <span>📞 2 14 78 87; 📞 2 14 76 63</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-list page-segment">
+                <div class="page-segment__anchor" id="work-experience"></div>
+                <h3 class="article-list__title">Work experience</h3>
+                <div class="article-list__content">
+                    <div class="article">
+                        <div class="article__article-pic"></div>
+                        <div class="article__article-content">
+                            <div class="article__date">2013-2018</div>
+                            <div class="article__article-header">
+                                <h3 class="article__main-title">
+                                    Web studio "Sulma Studio"
+                                </h3>
+                                <span class="article__title-note">Unfortunately now closed</span>
+                            </div>
+                            <p class="article__content">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eum atque laboriosam nulla
+                                totam necessitatibus obcaecati reiciendis
+                                iusto! Nam inventore, sit exercitationem
+                                maxime soluta quidem unde, rem reiciendis
+                                nostrum repellendus nobis?
+                            </p>
+                            <ul class="article__contacts">
+                                <li class="article__contact-item">
+                                    <i class="icon icon-web"></i>
+                                    <span>🌐 /sulmaofficialpages</span>
+                                </li>
+                                <li class="article__contact-item">
+                                    <i class="icon icon-phone"></i>
+                                    <span>📞 555 64 82 64</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article__article-pic"></div>
+                        <div class="article__article-content">
+                            <div class="article__date">2018-2020</div>
+                            <div class="article__article-header">
+                                <h3 class="article__main-title">Adjara</h3>
+                            </div>
+                            <p class="article__content">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eum atque laboriosam nulla
+                                totam necessitatibus obcaecati reiciendis
+                                iusto! Nam inventore, sit exercitationem
+                                maxime soluta quidem unde, rem reiciendis
+                                nostrum repellendus nobis?
+                            </p>
+                            <ul class="article__contacts">
+                                <li class="article__contact-item">
+                                    <i class="icon icon-web"></i>
+                                    <span>🌐 adjaranet.com</span>
+                                </li>
+                                <li class="article__contact-item">
+                                    <i class="icon icon-web"></i>
+                                    <span>🌐 adjarasport.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-set page-segment">
+                <div class="page-segment__anchor" id="tech-set"></div>
+                HTML CSS Javascript jQuery ReactJS Redux Sass Bootstrap
+                Tailwind BEM Git GitHub NPM / YARN Webpack
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>

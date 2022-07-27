@@ -442,5 +442,24 @@
         <footer class="footer container">
             AJ Portfolio © <span id="curr_date"></span>
         </footer>
+        <script>
+            if (!localStorage.theme) {
+                if (
+                    window.matchMedia &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                ) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            } else {
+                if (localStorage.theme === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                if (localStorage.theme === "light") {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+        </script>
     </body>
 </html>

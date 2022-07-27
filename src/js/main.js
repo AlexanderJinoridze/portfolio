@@ -68,24 +68,6 @@ $(".language-selector").on("click", event => {
     toggleLangBtn();
 });
 
-if (!localStorage.theme) {
-    if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-        $("body").addClass("dark-mode");
-    } else {
-        $("body").removeClass("dark-mode");
-    }
-} else {
-    if (localStorage.theme === "dark") {
-        $("body").addClass("dark-mode");
-    }
-    if (localStorage.theme === "light") {
-        $("body").removeClass("dark-mode");
-    }
-}
-
 window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", event => {

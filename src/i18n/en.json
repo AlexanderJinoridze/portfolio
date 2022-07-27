@@ -11,7 +11,7 @@
 
     "about-text": "Front-end developer, eager to build better and better products and willing to not only constantly improve already learned things but also learn new technologies like Svelte, Next.js, Vue, Express.js, and MongoDB. I constantly read articles and watch videos on many different subjects like semantic HTML, BEM, Atom design, and also on subjects such as CSR, SSR, SSG, and ISR. I have a ton of ideas that I want to realize in the future, some of them are just in my head but some are on my Github page",
 
-    "alert-text": "Please note that sites with the sign \"!\" uploaded to the Heroku cloud platform using its free plan, and may be slow to load, you can read more about this in <a href='https://dev.to/elijahtrillionz/your-heroku-app-is-slow-to-load-because-of-this-4lep' target='_blank' class='link'>this article</a>",
+    "alert-text": "Please note that sites with the sign \"!\" are uploaded to the Heroku cloud platform using its free plan, and may be slow to load, you can read more about this in <a href='https://dev.to/elijahtrillionz/your-heroku-app-is-slow-to-load-because-of-this-4lep' target='_blank' class='link'>this article</a>",
 
     "mermisi-title": "LEPL College \"Mermisi\"",
     "mermisi-role": "Web developer course",

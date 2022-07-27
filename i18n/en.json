@@ -9,7 +9,7 @@
     "name": "Alexander Jinoridze",
     "role": "I'm <span>Front-end developer</span> from Tbilisi",
 
-    "about-text": "Enthusiastic front-end developer, eager to build better and better products and willing to not only constantly improve already learned things but also learn new frameworks like Svelte, Next.js, Vue, and back-end frameworks like Node.js, Express.js, and MongoDB. I constantly read articles and watch videos on many different subjects like semantic HTML, BEM, Atom design, and also on subjects such as CSR, SSR, SSG, and ISR. I also have a ton of ideas that I want to realize in the future, some of them are just in my head but some are on my Github page",
+    "about-text": "Front-end developer, eager to build better and better products and willing to not only constantly improve already learned things but also learn new technologies like Svelte, Next.js, Vue, Express.js, and MongoDB. I constantly read articles and watch videos on many different subjects like semantic HTML, BEM, Atom design, and also on subjects such as CSR, SSR, SSG, and ISR. I have a ton of ideas that I want to realize in the future, some of them are just in my head but some are on my Github page",
 
     "alert-text": "Please note that sites with the sign \"!\" uploaded to the Heroku cloud platform using its free plan, and may be slow to load, you can read more about this in <a href='https://dev.to/elijahtrillionz/your-heroku-app-is-slow-to-load-because-of-this-4lep' target='_blank' class='link'>this article</a>",
 
@@ -22,7 +22,7 @@
     "sulma-text": "I held the position of markup developer and front-end developer, and sometimes also performed as a web designer too",
 
     "adjara-role": "Front-end developer",
-    "adjara-text": "I worked in the advertising department as a front-end developer, my tasks included the development and animation of advertising banners and the development of interactive widgets and landing pages",
+    "adjara-text": "I worked in the advertising department of Adjaranet and Adjarasport as a front-end developer, my tasks included the development and animation of advertising banners and the development of interactive widgets and landing pages",
 
     "tech-set-text": "Technologies with which I'm familiar with besides pure HTML, CSS, and Javascript:"
 }

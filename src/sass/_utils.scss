@@ -1,0 +1,31 @@
+.icon {
+    line-height: 0;
+    display: inline-block;
+}
+
+.text-block {
+    font-family: "Noto Serif Georgian", "Noto Serif", serif;
+
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.link {
+    color: #1462f4;
+    font-style: italic;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+
+    &[target="_blank"]::after {
+        content: "\f104";
+        padding-left: 6px;
+        font-size: 0.8rem;
+        vertical-align: super;
+        line-height: 0;
+    }
+
+    &:hover {
+        background-color: rgba(20, 169, 244, 0.5);
+    }
+}

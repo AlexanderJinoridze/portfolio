@@ -8,7 +8,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
 
-const filename = ext => isDev? `[name].${ ext }` : `[name].[hash].${ ext }`;
+const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;
 
 const optimization = () => {
     const config = {
@@ -17,7 +17,7 @@ const optimization = () => {
         }
     };
 
-    if(isProd){
+    if (isProd) {
         config.minimize = true;
         config.minimizer = [
             `...`,
@@ -34,11 +34,14 @@ const cssLoaders = extra => {
             loader: MiniCssExtractPlugin.loader,
             options: {}
         },
-        "css-loader",
+        {
+            loader: 'css-loader',
+            options: { url: true, sourceMap: true }
+        },
         "postcss-loader"
     ];
 
-    if(extra){
+    if (extra) {
         loaders.push(extra);
     }
 
@@ -62,6 +65,9 @@ const plugins = () => {
                 }, {
                     from: path.join(__dirname, "src", "images"),
                     to: path.join(__dirname, "dist", "images")
+                }, {
+                    from: path.join(__dirname, "src", "i18n"),
+                    to: path.join(__dirname, "dist", "i18n")
                 }
             ]
         }),
@@ -88,33 +94,33 @@ module.exports = {
         liveReload: false,
         port: 4200
     },
-    devtool: isDev? "source-map": false,
+    devtool: isDev ? "source-map" : false,
     plugins: plugins(),
     module: {
         rules: [{
-                test: /\.css$/,
-                use: cssLoaders()
-            }, {
-                test: /\.s[ac]ss$/,
-                use: cssLoaders("sass-loader")
-            }, {
-                test: /\.(png|jpg|jpeg|svg|gif)$/,
-                use: ["file-loader"]
-            }, {
-                test: /\.(ttf|woff|woff2|eot)$/,
-                use: ["file-loader"]
-            }, {
-                test: /\.m?js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: [
-                            "@babel/preset-env"
-                        ]
-                    }
+            test: /\.css$/,
+            use: cssLoaders()
+        }, {
+            test: /\.s[ac]ss$/,
+            use: cssLoaders("sass-loader")
+        }, {
+            test: /\.(png|jpg|jpeg|svg|gif)$/,
+            type: "asset/inline"
+        }, {
+            test: /\.(ttf|woff|woff2|eot)$/,
+            type: "asset/resource"
+        }, {
+            test: /\.m?js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: "babel-loader",
+                options: {
+                    presets: [
+                        "@babel/preset-env"
+                    ]
                 }
             }
+        }
         ]
     }
 }

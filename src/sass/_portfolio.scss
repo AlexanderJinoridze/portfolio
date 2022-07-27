@@ -1,0 +1,101 @@
+.portfolio-slider {
+    font-size: 0;
+    margin: 0 auto 2rem;
+}
+
+.portfolio-slide {
+    position: relative;
+    display: block !important;
+    opacity: 0.4;
+    transform: scale(0.9);
+    max-width: 15.4rem;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.portfolio-card {
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    display: block;
+    text-decoration: none;
+    color: $secondary-text-color;
+    background-color: $secondary-color;
+
+    &__title {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    &__repo-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        line-height: 0;
+        position: absolute;
+        left: 0.6rem;
+        bottom: 0.6rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: $secondary-text-color;
+        background-color: $secondary-color;
+
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+
+    &__alert {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    &__image {
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        margin: 0.2rem;
+        border-radius: 8px;
+        overflow: hidden;
+
+        & > img {
+            object-fit: cover;
+        }
+    }
+}
+
+.slick-center {
+    .portfolio-slide {
+        transform: scale(1);
+        opacity: 1;
+
+        & > a:hover {
+            color: $primary-text-color;
+            background-color: $primary-color;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+}

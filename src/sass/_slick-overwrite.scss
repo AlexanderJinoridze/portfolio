@@ -1,0 +1,47 @@
+.slick-list {
+    overflow: visible !important;
+}
+
+.slick-slide {
+    width: 16rem;
+}
+
+.slide-arrow {
+    z-index: 1;
+    position: absolute;
+    line-height: 0;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin: -1.5rem 0;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+
+    transition: all 0.2s ease;
+
+    body.dark-mode & {
+        color: #000;
+        background-color: #fff;
+    }
+
+    &:not(.slick-disabled):hover {
+        color: $primary-text-color;
+        background-color: $primary-color;
+    }
+
+    &.slick-disabled {
+        cursor: not-allowed;
+        opacity: 0.3;
+    }
+}
+
+.prev-arrow {
+    left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.next-arrow {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+}

@@ -1,0 +1,12 @@
+.footer {
+    box-sizing: border-box;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-color: rgba(0,0,0,0.25);
+    padding: 1.5rem;
+    text-align: right;
+
+    body.dark-mode & {
+        border-color: rgba(255,255,255,0.25);
+    }
+}

@@ -1,0 +1,12 @@
+.tech-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
+
+    & > div {
+        height: 4rem;
+        max-width: 9rem;
+    }
+}

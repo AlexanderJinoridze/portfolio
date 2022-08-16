@@ -1,11 +1,14 @@
 .article-list {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
 }
 
 .article {
     display: flex;
+
+    &:not(:last-of-type) {
+        margin-bottom: 4rem;
+    }
 
     &__picture {
         width: 6rem;
@@ -63,12 +66,12 @@
 
     @media (max-width: 520px) {
         &__header {
-            gap: 0.8rem;
             flex-direction: column;
         }
 
         &__date {
             order: -1;
+            margin-bottom: 0.8rem;
         }
     }
 }

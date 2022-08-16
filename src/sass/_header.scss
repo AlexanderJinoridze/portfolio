@@ -10,7 +10,7 @@
 
     background-color: #fff;
 
-    body.dark-mode & {
+    html.dark-mode & {
         box-shadow: rgba(0, 0, 0, 0.5) 0 0 14px;
         background-color: #000;
     }
@@ -23,7 +23,7 @@
         background-color: $secondary-light-color;
     }
 
-    body.dark-mode &__link:hover {
+    html.dark-mode &__link:hover {
         background-color: $secondary-color;
     }
 
@@ -84,7 +84,7 @@
         &:hover {
             background-color: $secondary-light-color;
 
-            body.dark-mode & {
+            html.dark-mode & {
                 background-color: $secondary-color;
             }
         }
@@ -131,7 +131,7 @@
 
                 background-color: #000;
 
-                body.dark-mode & {
+                html.dark-mode & {
                     background-color: #fff;
                 }
             }
@@ -190,7 +190,7 @@
             background-color: #fff;
             border-color: $secondary-light-color;
 
-            body.dark-mode & {
+            html.dark-mode & {
                 background-color: #000;
                 border-color: $secondary-color;
             }
@@ -246,7 +246,7 @@
     &::before {
         content: "🌙";
 
-        body.dark-mode & {
+        html.dark-mode & {
             content: "☀️";
         }
     }

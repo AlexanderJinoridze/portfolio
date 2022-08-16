@@ -20,7 +20,7 @@
 
     transition: all 0.2s ease;
 
-    body.dark-mode & {
+    html.dark-mode & {
         color: #000;
         background-color: #fff;
     }

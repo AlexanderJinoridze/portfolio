@@ -6,7 +6,7 @@
     padding: 1.5rem;
     text-align: right;
 
-    body.dark-mode & {
+    html.dark-mode & {
         border-color: rgba(255,255,255,0.25);
     }
 }

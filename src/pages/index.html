@@ -6,6 +6,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Alexander Jinoridze Portfolio</title>
+        <script>
+            if (!localStorage.theme) {
+                if (
+                    window.matchMedia &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                ) {
+                    document.documentElement.classList.add("dark-mode");
+                } else {
+                    document.documentElement.classList.remove("dark-mode");
+                }
+            } else {
+                if (localStorage.theme === "dark") {
+                    document.documentElement.classList.add("dark-mode");
+                }
+                if (localStorage.theme === "light") {
+                    document.documentElement.classList.remove("dark-mode");
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -446,24 +465,5 @@
         <footer class="footer container">
             AJ Portfolio © <span id="curr_date"></span>
         </footer>
-        <script>
-            if (!localStorage.theme) {
-                if (
-                    window.matchMedia &&
-                    window.matchMedia("(prefers-color-scheme: dark)").matches
-                ) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            } else {
-                if (localStorage.theme === "dark") {
-                    document.body.classList.add("dark-mode");
-                }
-                if (localStorage.theme === "light") {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-        </script>
     </body>
 </html>

@@ -8,8 +8,6 @@ body {
     justify-content: space-between;
     min-height: 100vh;
 
-    visibility: hidden;
-
     margin: 0;
 
     font-family: "Noto Sans Georgian", "Noto Sans", sans-serif;
@@ -30,7 +28,7 @@ body {
         display: block;
     }
 
-    &.dark-mode {
+    html.dark-mode & {
         background-color: #202021;
         color: #fff;
 

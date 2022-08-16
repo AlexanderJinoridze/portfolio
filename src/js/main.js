@@ -52,7 +52,6 @@ $.i18n()
     })
     .done(function () {
         $("html").i18n();
-        $("body").css("visibility", "visible");
     });
 
 $(".language-selector").on("click", event => {
@@ -73,15 +72,15 @@ window
     .addEventListener("change", event => {
         if (!localStorage.theme) {
             if (event.matches) {
-                $("body").addClass("dark-mode");
+                $("html").addClass("dark-mode");
             } else {
-                $("body").removeClass("dark-mode");
+                $("html").removeClass("dark-mode");
             }
         }
     });
 
 $(".theme-switch").on("click", function () {
-    var element = document.body;
+    var element = document.documentElement;
     element.classList.toggle("dark-mode");
 
     if ($(element).hasClass("dark-mode")) {

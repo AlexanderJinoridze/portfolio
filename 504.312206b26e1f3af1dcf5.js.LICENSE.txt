@@ -10,7 +10,7 @@
  */
 
 /*!
- * jQuery JavaScript Library v1.12.4
+ * jQuery JavaScript Library v2.2.4
  * http://jquery.com/
  *
  * Includes Sizzle.js
@@ -20,5 +20,5 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2016-05-20T17:17Z
+ * Date: 2016-05-20T17:23Z
  */

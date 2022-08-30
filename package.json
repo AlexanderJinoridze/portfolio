@@ -44,7 +44,7 @@
         "webpack-dev-server": "^4.9.2"
     },
     "dependencies": {
-        "jquery": "^3.6.0",
+        "jquery": "^2.2.4",
         "slick-carousel": "^1.8.1"
     }
 }

@@ -20,6 +20,13 @@
         "isHerokuApp": false
     },
     {
+        "title": "FFL Test App",
+        "link": "https://ffl-test.herokuapp.com/",
+        "img": "26",
+        "repo": "https://github.com/AlexanderJinoridze/FFL-test",
+        "isHerokuApp": true
+    },
+    {
         "title": "Event Promotion",
         "link": "http://eventpromotion.ge/",
         "img": "19",
@@ -39,22 +46,17 @@
         "isHerokuApp": false
     },
     {
-        "title": "IsaService",
-        "link": "http://isa.ge",
-        "img": "17",
-        "isHerokuApp": false
-    },
-    {
-        "title": "MedAir",
-        "link": "http://medairi.ge",
-        "img": "18",
-        "isHerokuApp": false
-    },
-    {
         "title": "Chart",
         "link": "http://chart.infinityfreeapp.com/",
         "img": "05",
         "repo": "https://github.com/AlexanderJinoridze/chart",
+        "isHerokuApp": false
+    },
+    {
+        "title": "MineSweeper",
+        "link": "http://minesweeper.infinityfreeapp.com/",
+        "img": "08",
+        "repo": "https://github.com/AlexanderJinoridze/minesweeper",
         "isHerokuApp": false
     },
     {
@@ -65,10 +67,15 @@
         "isHerokuApp": true
     },
     {
-        "title": "MineSweeper",
-        "link": "http://minesweeper.infinityfreeapp.com/",
-        "img": "08",
-        "repo": "https://github.com/AlexanderJinoridze/minesweeper",
+        "title": "IsaService",
+        "link": "http://isa.ge",
+        "img": "17",
+        "isHerokuApp": false
+    },
+    {
+        "title": "MedAir",
+        "link": "http://medairi.ge",
+        "img": "18",
         "isHerokuApp": false
     },
     {
